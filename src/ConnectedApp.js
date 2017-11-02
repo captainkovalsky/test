@@ -16,7 +16,10 @@ const mapStateToProps = (state) => {
   return {
     users: state.root.users,
     venues: state.root.venues,
-    result: state.result
+    skipVenues: state.result.skipVenues,
+    goodVenues: state.result.goodVenues,
+    drinkProblems: state.result.drinkProblems,
+    eatProblems : state.result.eatProblems
   };
 };
 

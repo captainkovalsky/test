@@ -1,11 +1,10 @@
 import React from 'react';
 
-export default ({result}) => {
-  console.log('result', result);
+export default ({ skipVenues, goodVenues, drinkProblems, eatProblems }) => {
 return (<div>
-<h2> avoid</h2>
+<h2>Avoid this</h2>
 <ul>
-  {result.skipVenues.map(name => (<li>{name}</li>))}
+  {skipVenues.length > 0 && skipVenues.map(name => (<li>{name}</li>))}
 </ul>
 
   </div>);

@@ -30,12 +30,12 @@ export const resultReducer = recycleState(
     },
 
     [messages.FOUND_SKIPPED]: (state, { payload }) => {
-      state.skipVenues.push(payload);
+      state.skipVenues = (payload);
       return state;
     },
 
     [messages.FOUND_GOOD]: (state, { payload }) => {
-      state.goodVenues.push(payload);
+      state.goodVenues = (payload);
       return state;
     },
   }),
