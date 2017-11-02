@@ -40,5 +40,10 @@ export const resultReducer = recycleState(
     },
   }),
   [messages.RESET_RESULT],
-  result
+  {
+    eatProblems: [],
+    drinkProblems: [],
+    goodVenues: [],
+    skipVenues: [],
+  }
 );
