@@ -1,0 +1,9 @@
+{
+  "presets": ["env", "react", "flow"],
+  "env": {
+    "test": {
+      "plugins": [ "add-module-exports"],
+      "presets": ["env", "react"]
+    }
+  }
+}
